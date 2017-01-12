@@ -1,0 +1,16 @@
+<view class="container">
+
+    <view class="navbar">
+        <view class="navbar-item {{selectedTab === index ? 'selected' : ''}}" wx:for="{{tabs}}" wx:key="{{index}}" bindtap="switchTab" data-tabindex="{{index}}">{{item.name}}</view>
+    </view>
+
+    <swiper current="{{selectedTab}}" circular="true">
+        <block wx:for="{{tabs}}" wx:key="{{index}}">
+            <swiper-item>
+                <!-- content of tabs -->
+                <text>{{item.name}}</text>
+            </swiper-item>
+        </block>
+    </swiper>
+
+</view>

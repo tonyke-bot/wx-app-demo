@@ -1,0 +1,9 @@
+{
+    "pages": [
+        "pages/main/main"
+    ],
+    "window": {
+        "navigationBarTitleText": "标签页测试",
+        "navigationBarBackgroundColor": "#54BFAE"
+    }
+}
